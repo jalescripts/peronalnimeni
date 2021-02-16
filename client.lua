@@ -7,12 +7,7 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
-  PlayerData = xPlayer
-end)
-
-function darkboy()
+function Dokumenti()
 
   ESX.UI.Menu.CloseAll()
 
@@ -61,7 +56,7 @@ function darkboy()
 )
 end
 
-RegisterNetEvent("darkboy:otvoridokumente")
-AddEventHandler("darkboy:otvoridokumente", function()
-      darkboy()
+RegisterNetEvent("personalni_meni:otvoridokumente")
+AddEventHandler("personalni_meni:otvoridokumente", function()
+      Dokumenti()
 end)
