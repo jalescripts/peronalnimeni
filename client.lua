@@ -60,3 +60,7 @@ RegisterNetEvent("personalni_meni:otvoridokumente")
 AddEventHandler("personalni_meni:otvoridokumente", function()
       Dokumenti()
 end)
+
+RegisterCommand("+personalni", function() Dokumenti() end, false)
+
+RegisterKeyMapping("+personalni", "Personalni Meni", "keyboard", "F5")
